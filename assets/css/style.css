@@ -1,0 +1,225 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+.navbar{
+    text-align: center;
+    background: rgba(76, 8, 27,95%);
+    padding: 10px;
+}
+.nav-item{
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.nav-link, .navbar-brand{
+    color: #f1f1f1;
+    font-size: 1.1em;
+}
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0) url(../img/fondo-header2\ -\ horizontal.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header > div > img {
+    width: 35vw;    
+}
+
+@media (max-width: 550px) {
+    header {
+        width: 100%;
+        background: rgba(255, 255, 255, 0) url(../img/fondo-header2.png) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+    }
+    header > div > img {
+        width: 250px;   
+    }
+}
+
+
+
+/*Seccion Sobre Nosotros*/
+#nosotros{
+    background: #ddd;
+    padding-top: 5vw;
+    box-sizing: border-box;   
+    overflow-x: hidden;
+    
+}
+.historia{
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px #777a;
+    background: #dde;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.nosotros h2{
+    font-size: 2em;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.nosotros p {
+    font-size: 1em ;
+}
+
+.nosotros img{
+    width: 100%;
+    padding: 20px;
+}
+
+/*Mision y Vision*/
+
+.mision-vision{
+    box-sizing: border-box;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    width: 60vw;
+    margin: auto;
+}
+
+.mision,.vision{
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(110, 110, 163);
+    border-radius: 5px;
+}
+
+/*Seleccion del producto*/
+#productos {
+    padding-top: 5vw;
+}
+
+.seleccion-producto {
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #E59866;
+    margin-bottom: 20px;
+    padding: 0px 15%;
+    overflow-x: hidden;
+
+}
+.boton-producto button span {
+    display: block;
+}
+
+.productos h2 {
+    text-align: center;
+    font-family: "Passengers Script", cursive;
+    font-size: 3em;
+}
+
+.boton-producto {
+    width: 100%;
+    padding: 0.5vw 2vw;
+}
+
+.boton-producto button {
+    width: 100%;
+    border: none;
+    background-color: #E59866;
+}
+.boton-producto button:hover {
+    width: 100%;
+    border: none;
+    background-color: #E59866;
+}
+.boton-producto img {
+    width: 4vw;
+}
+
+@media screen and (max-width: 768px) {
+    .productos h2 {
+        text-align: center;
+        font-family: "Passengers Script", cursive;
+        font-size: 1.5em;
+    }
+    .seleccion-producto {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+
+    .boton-producto {
+        padding: 1.5vw; /* Ajustar el padding de los botones en pantallas pequeñas */
+    }
+
+    .boton-producto img {
+        width: 10vw; /* Ajustar el tamaño de las imágenes en pantallas pequeñas */
+    }
+}
+
+/*CAROUSEL*/
+.carousel-item h5, .carousel-item p{
+    color: red;
+}
+.contenedor-carrusel{
+    width: 80%;
+    margin: auto;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: #222a;
+}
+
+/*Ubicacion*/
+
+#ubicacion{
+    background: #ddd;
+    padding: 5vw 0 2vw 0;
+    box-sizing: border-box;  
+}
+
+.ubicacion{
+    text-align: center;
+}
+.ubicacion-google-maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*FOOTER*/
+footer{
+    background-color: rgba(76, 8, 27,95%);
+    color: #f1f1f1;
+    font-size: 16px;
+    text-align: center;
+}
+.contacto{
+    padding: 1vw;
+}
+
+footer h3{
+    font-size: 1.5em;
+}
+
+footer p {
+    font-size: 1em;
+    padding-top: 4px;
+
+}
+footer a{
+    text-decoration: none;
+    color: #f1f1f1;
+}
+.copyright{
+    text-align: center;
+    padding: 0.5vw 0 0.5vw 0;
+}
